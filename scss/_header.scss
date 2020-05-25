@@ -1,0 +1,21 @@
+header {
+  margin: 7rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    display: flex;
+    padding: 0;
+    li {
+      margin-left: 3rem;
+      color: $Dark-Blue;
+      font-size: 1.4rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
