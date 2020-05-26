@@ -1,6 +1,5 @@
 .hero {
   &__content {
-    max-width: 100%;
     @include breakpoint(medium) {
       grid-row: 2 /3;
     }

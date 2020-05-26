@@ -1,0 +1,23 @@
+.testimonials {
+  position: relative;
+  width: 54rem;
+  background: $Vary-Light-Gray;
+  text-align: center;
+  padding: 0 9rem;
+  img {
+    display: block;
+    width: 7.7rem;
+    height: 7.7rem;
+    position: absolute;
+    bottom: 65%;
+    left: 45%;
+  }
+
+  h4 {
+    padding-top: 10rem;
+  }
+
+  p {
+    margin: auto;
+  }
+}

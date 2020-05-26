@@ -19,6 +19,7 @@ body {
   background: #fff;
   color: #000;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 a {
@@ -35,8 +36,14 @@ img {
 }
 
 h1,
-h2 {
+h2,
+h4 {
   color: $Dark-Blue;
+  padding-bottom: $p-btm-small;
+}
+
+p {
+  color: $Dark-Grayish-Blue;
 }
 
 .container {
