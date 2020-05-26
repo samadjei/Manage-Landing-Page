@@ -1,23 +1,30 @@
+.testimonial {
+  padding-top: 16rem;
+  padding-bottom: 18rem;
+  text-align: center;
+}
+
+.glider {
+  overflow-x: hidden;
+}
+
 .testimonials {
   position: relative;
-  width: 54rem;
+  max-width: 54rem;
   background: $Vary-Light-Gray;
   text-align: center;
-  padding: 0 9rem;
+  padding: 5rem 9rem;
+  margin: 9rem 4rem 4rem;
   img {
     display: block;
     width: 7.7rem;
     height: 7.7rem;
     position: absolute;
-    bottom: 65%;
+    bottom: 85%;
     left: 45%;
   }
 
-  h4 {
-    padding-top: 10rem;
-  }
-
-  p {
-    margin: auto;
-  }
+  // h4 {
+  //   padding-top: 5rem;
+  // }
 }
