@@ -1,0 +1,58 @@
+.footer__bottom {
+  background: $Very-Dark-Blue;
+  color: $Vary-Light-Gray;
+  padding: 6rem 15rem;
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &--left {
+    display: flex;
+    flex-direction: column;
+    svg {
+      margin-bottom: auto;
+    }
+  }
+}
+
+.footer__links li {
+  line-height: 2;
+
+  &:hover {
+    color: $Bright-Red;
+    cursor: pointer;
+  }
+}
+
+.social-icons {
+  display: flex;
+  font-size: 2rem;
+  li {
+    padding-right: 1rem;
+  }
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  form {
+    margin-bottom: auto;
+  }
+}
+
+.footer__forms {
+  display: flex;
+  align-items: center;
+  input {
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    border: none;
+    margin-right: 1rem;
+    margin-bottom: auto;
+  }
+
+  .cta {
+    padding: 1rem 2rem;
+  }
+}

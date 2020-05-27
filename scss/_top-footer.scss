@@ -1,3 +1,27 @@
-.top-footer {
-  background-color: $Bright-Red;
+.footer__top {
+  background: $Bright-Red;
+  padding: 6rem 15rem;
+  background: hsl(12, 88%, 59%);
+  position: relative;
+  overflow: hidden;
+  &--desc h2 {
+    color: #fff;
+    font-size: 3rem;
+    width: 80%;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-invert {
+  color: $Bright-Red;
+  background: $Vary-Light-Gray;
+}
+
+.bg-pattern {
+  position: absolute;
 }

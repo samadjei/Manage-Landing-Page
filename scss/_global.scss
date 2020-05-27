@@ -50,7 +50,6 @@ p {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
-  overflow: hidden;
 }
 
 // Breakpoints
@@ -89,17 +88,10 @@ $breakpoints: (
 
 .bg-desktop {
   position: relative;
-  max-width: 1440px;
+  // max-width: 1440px;
   margin: 0 auto;
   padding: 0 2rem;
   overflow: hidden;
-}
-
-.bg-pattern {
-  position: absolute;
-  bottom: 10%;
-  left: 60%;
-  z-index: -999;
 }
 
 /* @include breakpoint(medium) {
