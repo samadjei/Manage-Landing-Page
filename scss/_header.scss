@@ -1,8 +1,26 @@
-header {
-  margin: 7rem 0;
+.header {
+  padding: 7rem 0;
+  position: relative;
+
+  &__menu {
+    //Mobile menu
+
+    > span {
+      display: block;
+      width: 2.6rem;
+      height: 0.2rem;
+      background-color: $Dark-Blue;
+      // pointer-events: none;
+      cursor: pointer;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 }
 
-nav {
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,4 +36,9 @@ nav {
       }
     }
   }
+}
+
+// Visibility
+.hide-for-mobile {
+  display: none;
 }

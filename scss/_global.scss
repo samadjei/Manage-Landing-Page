@@ -57,8 +57,16 @@ $breakpoints: (
   // Phones
     small: 37.5rem,
   // Tablet
-    medium: 76.8rem
+    medium: 80rem
 );
+
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get($breakpoints, $size);
+
+  @media screen and (max-width: $breakpoint-value) {
+    @content;
+  }
+}
 
 @mixin breakpoint($size) {
   $breakpoint-value: map-get($breakpoints, $size);
@@ -70,7 +78,9 @@ $breakpoints: (
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
   grid-gap: 1rem;
   @include breakpoint(medium) {
     justify-items: center;

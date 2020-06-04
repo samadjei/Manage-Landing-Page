@@ -15,20 +15,26 @@
   <body>
     <div class="bg-desktop">
       <img class="bg-pattern" src="images/bg-tablet-pattern.svg" alt="" />
-      <header>
-        <div class="container">
-          <nav>
-            <img src="images/logo.svg" alt="Logo" />
-            <ul>
-              <li>Pricing</li>
-              <li>Product</li>
-              <li>About Us</li>
-              <li>Careers</li>
-              <li>Community</li>
-            </ul>
+      <header class="header">
+        <nav class="container main-nav">
+          <img src="images/logo.svg" alt="Logo" />
+
+          <ul class="header__links hide-for-mobile">
+            <li>Pricing</li>
+            <li>Product</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Community</li>
+          </ul>
+          <div class="menu-btn">
             <a class="cta" href="#">Get Started</a>
-          </nav>
-        </div>
+          </div>
+          <a class="header__menu hide-for-desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </nav>
       </header>
 
       <section class="hero">
