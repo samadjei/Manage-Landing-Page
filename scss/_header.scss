@@ -6,12 +6,15 @@
     //Mobile menu
 
     > span {
-      display: block;
+      display: none;
       width: 2.6rem;
       height: 0.2rem;
       background-color: $Dark-Blue;
-      // pointer-events: none;
       cursor: pointer;
+
+      @include breakpoint(medium) {
+        display: block;
+      }
 
       &:not(:last-child) {
         margin-bottom: 0.5rem;
