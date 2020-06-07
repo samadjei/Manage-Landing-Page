@@ -1,5 +1,8 @@
 .showcase {
   margin-top: 10rem;
+  @include breakpoint(medium) {
+    margin-top: 0;
+  }
   &__left {
     h2 {
       font-size: 3.5rem;

@@ -1,17 +1,31 @@
 .hero {
-  padding: 8rem 0;
+  margin-top: 8rem;
+  @include breakpoint(medium) {
+  }
   &__content {
     padding-top: 5rem;
-    
+
+    @include breakpoint(medium) {
+      text-align: center;
+      padding-top: 0;
+      padding-bottom: 10rem;
+    }
+
     h1 {
       font-size: 4.5rem;
-
+      @include breakpoint(medium) {
+        font-size: 4rem;
+      }
     }
 
     p {
       color: $Dark-Grayish-Blue;
       font-size: 1.4rem;
       padding-bottom: 4.5rem;
+      @include breakpoint(medium) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
     }
     @include breakpoint(medium) {
       grid-row: 2 /3;
@@ -36,12 +50,11 @@
 
 .flexy {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   justify-content: center;
   align-items: start;
-  grid-gap: 12rem;
+  grid-gap: 8rem;
   @include breakpoint(medium) {
-    grid-template-columns: 1fr;
     grid-gap: 0;
   }
 }
