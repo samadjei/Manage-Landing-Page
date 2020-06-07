@@ -1,28 +1,28 @@
 .hero {
-  overflow: hidden;
+  padding: 8rem 0;
   &__content {
-    @include breakpoint(medium) {
-      grid-row: 2 /3;
-    }
+    padding-top: 5rem;
+    
     h1 {
-      color: $Dark-Blue;
       font-size: 4.5rem;
-      margin-bottom: 2rem;
-      width: 43rem;
+
     }
 
     p {
       color: $Dark-Grayish-Blue;
-      margin-bottom: 3rem;
       font-size: 1.4rem;
-      width: 30rem;
+      padding-bottom: 4.5rem;
+    }
+    @include breakpoint(medium) {
+      grid-row: 2 /3;
     }
   }
 
-  &__img {
-    margin-left: auto;
+  &__img img {
+    display: block;
+    width: 100%;
     @include breakpoint(medium) {
-      grid-row: 1 /2;
+      grid-row: 1 / 2;
     }
   }
 }
@@ -32,4 +32,16 @@
   bottom: 10%;
   left: 60%;
   z-index: -999;
+}
+
+.flexy {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: start;
+  grid-gap: 12rem;
+  @include breakpoint(medium) {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
 }

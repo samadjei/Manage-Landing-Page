@@ -16,39 +16,47 @@
     <div class="bg-desktop">
       <img class="bg-pattern" src="images/bg-tablet-pattern.svg" alt="" />
       <header class="header">
-        <nav class="container main-nav">
-          <img src="images/logo.svg" alt="Logo" />
-
-          <ul class="header__links hide-for-mobile">
-            <li>Pricing</li>
-            <li>Product</li>
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Community</li>
-          </ul>
-          <div class="menu-btn">
-            <a class="cta" href="#">Get Started</a>
+        <div class="overlay has-fade"></div>
+        <nav class="container flex flex-jc-sb flex-ai-c">
+          <div class="header__logo">
+            <img src="images/logo.svg" alt="Logo" />
           </div>
-          <a class="header__menu hide-for-desktop">
+          <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
             <span></span>
             <span></span>
             <span></span>
           </a>
+
+          <div class="header__links hide-for-mobile">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Blog</a>
+            <a href="#">Careers</a>
+          </div>
+
+          <a class="cta hide-for-mobile">Request Invite</a>
         </nav>
+
+        <div class="header__menu contain has-fade">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Blog</a>
+          <a href="#">Careers</a>
+        </div>
       </header>
 
       <section class="hero">
-        <div class="container">
-          <div class="grid">
-            <div class="hero__content">
-              <h1>Bring everyone together to build better products.</h1>
-              <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
-              <a class="cta" href="">Get Started</a>
-            </div>
+        <div class="container flexy">
+          <div class="hero__content">
+            <h1>Bring everyone together to build better products.</h1>
+            <p>Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+            <a class="cta" href="">Get Started</a>
+          </div>
 
-            <div class="hero__img">
-              <img src="images/illustration-intro.svg" alt="Graph" />
-            </div>
+          <div class="hero__img">
+            <img src="images/illustration-intro.svg" alt="Graph" />
           </div>
         </div>
       </section>
@@ -56,7 +64,7 @@
 
     <section class="showcase">
       <div class="container">
-        <div class="grid">
+        <div class="flex">
           <div class="showcase__left">
             <h2>What’s different about Manage?</h2>
             <p>Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>

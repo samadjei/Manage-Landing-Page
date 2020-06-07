@@ -3,15 +3,30 @@ new Glider(document.querySelector('.glider'), {
   draggable: true,
 });
 
-// Hamburger   Menu
-const hamburger = document.querySelector('.hamburger');
-const nav = document.querySelector('.menu');
-const overlay = document.querySelector('.bg-overlay');
-const links = document.querySelectorAll('.menu li');
+// Hamburger Menu 
+const btnHamburger = document.querySelector('#btnHamburger');
+const header = document.querySelector('.header');
+const overlay = document.querySelector('.overlay');
+const fadeElements = document.querySelectorAll('.has-fade');
+const body = document.querySelector('body');
 
-// Hamburger Menu
-hamburger.addEventListener('click', () => {
-  nav.classList.toggle('open');
-  overlay.classList.toggle('open');
-  hamburger.classList.toggle('toggle');
+btnHamburger.addEventListener('click', function () {
+  console.log('click hamburger');
+
+  if (header.classList.contains('open')) { //Close hamburger menu
+    body.classList.remove('noscroll');
+    header.classList.remove('open');
+    fadeElements.forEach(function (element) {
+      element.classList.remove('fade-in');
+      element.classList.add('fade-out');
+    });
+
+  } else { //Open hamburger menu
+    body.classList.add('noscroll');
+    header.classList.add('open');
+    fadeElements.forEach(function (element) {
+      element.classList.remove('fade-out');
+      element.classList.add('fade-in');
+    });
+  }
 });

@@ -19,7 +19,11 @@ body {
   background: #fff;
   color: #000;
   font-size: 16px;
-  line-height: 1.5;
+  // line-height: 1.5;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -32,6 +36,7 @@ ul {
 }
 
 img {
+  display: block;
   max-width: 100%;
 }
 
@@ -55,18 +60,10 @@ p {
 // Breakpoints
 $breakpoints: (
   // Phones
-    small: 37.5rem,
+    small: 49.9rem,
   // Tablet
-    medium: 80rem
+    medium: 76.8rem
 );
-
-@mixin breakpoint($size) {
-  $breakpoint-value: map-get($breakpoints, $size);
-
-  @media screen and (max-width: $breakpoint-value) {
-    @content;
-  }
-}
 
 @mixin breakpoint($size) {
   $breakpoint-value: map-get($breakpoints, $size);
@@ -81,7 +78,7 @@ $breakpoints: (
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   @include breakpoint(medium) {
     justify-items: center;
   }
@@ -94,6 +91,15 @@ $breakpoints: (
   color: $Vary-Light-Gray;
   border-radius: 5rem;
   padding: 1rem 2.5rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  @include breakpoint(medium) {
+    padding: 1rem 1.7rem;
+  }
 }
 
 .bg-desktop {
@@ -107,3 +113,24 @@ $breakpoints: (
 /* @include breakpoint(medium) {
 
 } */
+
+// Flexbox
+.flex {
+  display: flex;
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.contain {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
