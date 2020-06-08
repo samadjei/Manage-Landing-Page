@@ -51,13 +51,6 @@ p {
   color: $Dark-Grayish-Blue;
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  overflow: hidden;
-}
-
 // Breakpoints
 $breakpoints: (
   // Phones
@@ -66,12 +59,10 @@ $breakpoints: (
     medium: 76.8rem
 );
 
-@mixin breakpoint($size) {
-  $breakpoint-value: map-get($breakpoints, $size);
-
-  @media screen and (max-width: $breakpoint-value) {
-    @content;
-  }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .grid {
@@ -79,7 +70,7 @@ $breakpoints: (
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  grid-gap: 3rem;
+  // grid-gap: 3rem;
   @include breakpoint(medium) {
     justify-items: center;
   }
