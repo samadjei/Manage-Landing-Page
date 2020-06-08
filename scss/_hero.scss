@@ -1,7 +1,7 @@
 .hero {
   margin: 8rem 0;
 
-  &__grid {
+  &__flex {
     display: flex;
     & > div {
       flex: 1;
@@ -9,6 +9,7 @@
 
     @include breakpoint(small) {
       flex-direction: column-reverse;
+      text-align: center;
     }
 
   }
