@@ -1,14 +1,23 @@
 .hero {
-  margin-top: 8rem;
+  margin: 8rem 0;
 
   &__grid {
     display: flex;
-    // flex-wrap: wrap;
-    align-items: center;
+    & > div {
+      flex: 1;
+    }
+
+    @include breakpoint(small) {
+      flex-direction: column-reverse;
+    }
+
   }
 
   &__content {
     padding-top: 2.5rem;
+    @include breakpoint(medium) {
+      grid-row: 2 /3;
+    }
     h1 {
       font-size: 4.5rem;
     }
@@ -17,6 +26,15 @@
       color: $Dark-Grayish-Blue;
       font-size: 1.4rem;
       padding-bottom: 4.5rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    img {
+      @include breakpoint(medium) {
+        grid-row: 1 / 2;
+      }
     }
   }
 }
