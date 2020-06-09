@@ -41,6 +41,12 @@
   &__content {
     padding-bottom: 5rem;
     display: flex;
+    align-items: center;
+
+    @include breakpoint(small) {
+      padding-left: 2rem;
+      
+    }
 
     & > div {
       flex-direction: column;
@@ -55,6 +61,7 @@
       padding: 1rem 2.5rem;
       @include breakpoint(small) {
         margin-right: 0rem;
+        z-index: 1;
       }
     }
 
@@ -62,6 +69,12 @@
       font-size: 1.8rem;
       @include breakpoint(small) {
         background: $Very-Pale-Red;
+        padding-left: 2rem;
+        padding: 1rem 2.5rem;
+        font-size: 1.6rem;
+
+        margin-left: -1.5rem;
+        z-index: 0;
       }
     }
 
