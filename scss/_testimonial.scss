@@ -1,7 +1,17 @@
 .testimonial {
-  padding-top: 16rem;
+  padding-top: 10rem;
   padding-bottom: 18rem;
   text-align: center;
+  @include breakpoint(small) {
+    padding-top: 5rem;
+  }
+  &--title {
+    font-size: 3rem;
+  }
+
+  &--btn {
+    margin-top: 3rem;
+  }
 }
 
 .glider {
@@ -10,11 +20,27 @@
 
 .testimonials {
   position: relative;
-  max-width: 54rem;
+  max-width: 50%;
   background: $Vary-Light-Gray;
   text-align: center;
-  padding: 5rem 9rem;
-  margin: 9rem 4rem 4rem;
+  padding: 5rem 5rem;
+  margin: 9rem 4rem 2.5rem;
+  @include breakpoint(medium) {
+    padding: 4rem 4rem;
+  }
+
+  &--name {
+    @include breakpoint(small) {
+      padding-top: 3rem;
+    }
+  }
+
+  &--content {
+    p {
+      font-size: 1.6rem;
+    }
+  }
+
   img {
     display: block;
     width: 7.7rem;
@@ -22,9 +48,15 @@
     position: absolute;
     bottom: 85%;
     left: 45%;
+    @include breakpoint(small) {
+      left: 40%;
+    }
   }
+}
 
-  // h4 {
-  //   padding-top: 5rem;
-  // }
+.glider-dots {
+  visibility: hidden;
+  @include breakpoint(medium) {
+    visibility: visible;
+  }
 }
