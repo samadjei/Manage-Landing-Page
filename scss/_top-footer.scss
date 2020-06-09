@@ -3,7 +3,6 @@
   padding: 6rem 15rem;
   background: hsl(12, 88%, 59%);
   position: relative;
-  overflow: hidden;
 
   &--desc h2 {
     color: #fff;
@@ -12,8 +11,10 @@
   }
 }
 
+
 .flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -22,6 +23,3 @@
   color: $Bright-Red;
   background: $Vary-Light-Gray;
 }
-
-
-
