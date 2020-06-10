@@ -11,22 +11,24 @@
       flex-direction: column-reverse;
       text-align: center;
     }
-
   }
 
   &__content {
     padding-top: 2.5rem;
+    max-width: 100%;
     @include breakpoint(medium) {
       grid-row: 2 /3;
     }
     h1 {
-      font-size: 4.5rem;
+      font-size: 5rem;
+      max-width: 80%;
     }
 
     p {
       color: $Dark-Grayish-Blue;
       font-size: 1.4rem;
       padding-bottom: 4.5rem;
+      max-width: 55%;
     }
   }
 
@@ -42,7 +44,7 @@
 
 .bg-pattern {
   position: absolute;
-  bottom: 10%;
+  bottom: 25%;
   left: 60%;
   z-index: -999;
 }
