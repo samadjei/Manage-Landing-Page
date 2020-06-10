@@ -17,10 +17,6 @@
     h2 {
       color: #fff;
       font-size: 3rem;
-
-      @include breakpoint(small) {
-        // font-size: 2rem;
-      }
     }
   }
 }

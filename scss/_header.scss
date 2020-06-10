@@ -18,13 +18,13 @@
   }
 
   .overlay {
-    opacity: 0;
     position: fixed;
     top: 0rem;
     right: 0rem;
     bottom: 0rem;
     left: 0rem;
-    background-image: linear-gradient($Dark-Grayish-Blue, transparent);
+    background: linear-gradient(to bottom, white, rgba(0,0,0,0.7));
+    opacity: 0.1;
   }
 
   nav {

@@ -2,6 +2,7 @@
   background: $Very-Dark-Blue;
   color: $Vary-Light-Gray;
   padding: 6rem 15rem;
+  padding-bottom: 0;
 
   @include breakpoint(medium) {
     padding: 6rem 4rem;
@@ -51,6 +52,10 @@
       }
 
       i {
+        &:hover {
+          cursor: pointer;
+          color: $Bright-Red;
+        }
         @include breakpoint(small) {
           font-size: 3rem;
           padding-right: 2rem;
@@ -106,6 +111,7 @@
       border: none;
       margin-right: 1rem;
       margin-bottom: auto;
+      outline: none;
     }
 
     .cta {
@@ -124,4 +130,16 @@
   &--copyright {
     font-size: 1.3rem;
   }
+}
+
+small {
+  display: none;
+  color: $Bright-Red;
+  position: absolute;
+  top: 7rem;
+  left: 2rem;
+}
+
+form small {
+  display: block;
 }
