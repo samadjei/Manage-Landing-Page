@@ -1,22 +1,46 @@
 .footer__top {
   background: $Bright-Red;
-  padding: 6rem 15rem;
+  padding: 8rem 15rem;
   background: hsl(12, 88%, 59%);
   position: relative;
 
-  &--desc h2 {
-    color: #fff;
-    font-size: 3rem;
+  @include breakpoint(small) {
+    padding: 6rem 4rem;
+  }
+
+  &--desc {
     width: 80%;
+    margin: auto;
+    @include breakpoint(small) {
+      width: 100%;
+    }
+    h2 {
+      color: #fff;
+      font-size: 3rem;
+
+      @include breakpoint(small) {
+        // font-size: 2rem;
+      }
+    }
   }
 }
 
+.footer__bg {
+  background-image: url("../images/bg-simplify-section-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  @include breakpoint(medium) {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
 }
 
 .cta-invert {
