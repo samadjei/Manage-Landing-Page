@@ -1,5 +1,6 @@
 .showcase {
   margin-top: 10rem;
+  padding: 0 3rem;
   @include breakpoint(medium) {
     margin-top: 0;
   }

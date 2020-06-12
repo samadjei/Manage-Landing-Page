@@ -30,7 +30,7 @@
   }
 
   &--name {
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
       padding-top: 3rem;
     }
   }
@@ -48,8 +48,11 @@
     position: absolute;
     bottom: 85%;
     left: 45%;
-    @include breakpoint(small) {
+    @include breakpoint(medium) {
       left: 40%;
+    }
+    @include breakpoint(small) {
+      left: 43%;
     }
   }
 }
